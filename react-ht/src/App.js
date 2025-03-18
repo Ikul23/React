@@ -5,9 +5,11 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import Message from './Message';
 import CommentsList from './CommentsList';
-import TemperatureConverter from './TemperatureConverter'; 
+import TemperatureConverter from './TemperatureConverter';
 import TodoList from './TodoList';
 import ThemeToggle from './ThemeToggle';
+import AddProductForm from './AddProductForm'; // Добавлен компонент
+import ProductList from './ProductList'; // Добавлен компонент
 import './App.css';
 
 function App() {
@@ -45,8 +47,10 @@ function App() {
                   <Message text="Привет, это мое первое сообщение в React!" />
                   <Message text="Это второе сообщение." />
                   <CommentsList />
-                  <TemperatureConverter /> {/* Добавлен TemperatureConverter */}
+                  <TemperatureConverter />
                   <TodoList />
+                  <AddProductForm /> {/* Добавлен компонент */}
+                  <ProductList /> {/* Добавлен компонент */}
                 </>
               }
             />
