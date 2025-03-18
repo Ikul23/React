@@ -1,17 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import Message from './Message';
 import CommentsList from './CommentsList';
-import TemperatureConverter from './TemperatureConverter';
+import TemperatureConverter from './TemperatureConverter'; 
 import TodoList from './TodoList';
+import ThemeToggle from './ThemeToggle';
 import './App.css';
 
 function App() {
+  const isDarkTheme = useSelector((state) => state.theme.isDarkTheme);
+
   return (
     <Router>
-      <div className="App">
+      <div className={`App ${isDarkTheme ? 'dark' : ''}`}>
         <header className="App-header">
           {/* Навигационное меню */}
           <nav>
@@ -29,6 +33,9 @@ function App() {
             </ul>
           </nav>
 
+          {/* Переключатель темы */}
+          <ThemeToggle />
+
           {/* Маршруты */}
           <Routes>
             <Route
@@ -38,7 +45,7 @@ function App() {
                   <Message text="Привет, это мое первое сообщение в React!" />
                   <Message text="Это второе сообщение." />
                   <CommentsList />
-                  <TemperatureConverter />
+                  <TemperatureConverter /> {/* Добавлен TemperatureConverter */}
                   <TodoList />
                 </>
               }
