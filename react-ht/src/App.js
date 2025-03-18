@@ -1,6 +1,8 @@
 import React from 'react';
 import Message from './Message';
 import CommentsList from './CommentsList';
+import TemperatureConverter from './TemperatureConverter';
+import TodoList from './TodoList';
 import './App.css';
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
         <Message text="Привет, это мое первое сообщение в React!" />
         <Message text="Это второе сообщение." />
         <CommentsList />
+        <TemperatureConverter />
+        <TodoList />
       </header>
     </div>
   );
