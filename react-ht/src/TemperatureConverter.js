@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Typography, Box } from '@mui/material';
+import './index.css'; 
 
 const TemperatureConverter = () => {
   const [celsius, setCelsius] = useState('');
@@ -28,26 +29,26 @@ const TemperatureConverter = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 300, margin: 'auto', mt: 4 }}>
-      <Typography variant="h5" align="center" gutterBottom>
-        Температурный конвертер
-      </Typography>
-      <TextField
-        label="Градусы Цельсия"
-        variant="outlined"
-        fullWidth
-        value={celsius}
-        onChange={handleCelsiusChange}
-        sx={{ mb: 2 }}
-      />
-      <TextField
-        label="Градусы Фаренгейта"
-        variant="outlined"
-        fullWidth
-        value={fahrenheit}
-        onChange={handleFahrenheitChange}
-      />
-    </Box>
+    <div className="temperature-converter">
+  <Typography variant="h5" align="center" gutterBottom>
+    Температурный конвертер
+  </Typography>
+  <TextField
+    label="Градусы Цельсия"
+    variant="outlined"
+    fullWidth
+    value={celsius}
+    onChange={handleCelsiusChange}
+    sx={{ mb: 2 }}
+  />
+  <TextField
+    label="Градусы Фаренгейта"
+    variant="outlined"
+    fullWidth
+    value={fahrenheit}
+    onChange={handleFahrenheitChange}
+  />
+</div>
   );
 };
 

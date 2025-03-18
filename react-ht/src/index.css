@@ -7,7 +7,11 @@
   font-family: Arial, sans-serif;
   color: #333;
 }
-.comments-list {
+
+
+.comments-list,
+.todo-list,
+.temperature-converter {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -15,16 +19,24 @@
   background-color: #f9f9f9;
 }
 
-.comments-list h2 {
+
+.comments-list h2,
+.todo-list h2,
+.temperature-converter h2 {
   margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.comments-list ul {
+.comments-list ul,
+.todo-list .MuiList-root {
   list-style-type: none;
   padding: 0;
 }
 
-.comments-list li {
+.comments-list li,
+.todo-list .MuiListItem-root,
+.temperature-converter .MuiTextField-root {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,12 +47,20 @@
   border-radius: 5px;
 }
 
-.comments-list li span {
+
+.comments-list li span,
+.todo-list .MuiListItemText-root,
+.temperature-converter .MuiTextField-root input {
   flex-grow: 1;
   margin-right: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.comments-list li button {
+
+.comments-list li button,
+.todo-list .MuiIconButton-root,
+.temperature-converter .MuiButton-root {
   background-color: #ff4d4d;
   color: white;
   border: none;
@@ -49,6 +69,22 @@
   cursor: pointer;
 }
 
-.comments-list li button:hover {
+.comments-list li button:hover,
+.todo-list .MuiIconButton-root:hover,
+.temperature-converter .MuiButton-root:hover {
   background-color: #ff1a1a;
+}
+
+/* TemperatureConverter.css */
+.temperature-converter .MuiTextField-root {
+  margin-bottom: 10px;
+}
+
+.temperature-converter .MuiTextField-root label {
+  color: #333;
+}
+
+.temperature-converter .MuiTextField-root input {
+  font-family: Arial, sans-serif;
+  color: #333;
 }
