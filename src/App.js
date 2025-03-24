@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Catalog from './pages/Catalog/Catalog';
-import ProductPage from './pages/ProductPage/ProductPage';
-import CartPage from './pages/CartPage/CartPage';
+import ProductPage from './Pages/ProductPage';
+import CartPage from './Pages/CartPage';
 import Registration from './pages/Registration/Registration';
 
 const AppRoutes = () => {
