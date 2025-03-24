@@ -22,10 +22,6 @@ project/
 │ │ │ ├── Product.jsx
 │ │ │ └── Product.scss
 
-│ │ ├── Cart/
-│ │ │ ├── Cart.jsx
-│ │ │ └── Cart.scss
-
 │ │ ├── FilterSort/
 │ │ │ ├── FilterSort.jsx
 │ │ │ └── FilterSort.scss
@@ -33,6 +29,11 @@ project/
 │ │ └── Pagination/
 │ │ ├── Pagination.jsx
 │ │ └── Pagination.scss
+
+│ │ └── Features/
+│ │ ├── Features.jsx
+│ │ └── Features.scss
+
 │
 │ ├── pages/ # Страницы
 
